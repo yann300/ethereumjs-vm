@@ -1,6 +1,6 @@
 // Utility helpers to convert authorization lists from the byte format and JSON format and vice versa
 
-import { EthereumJSErrorWithoutCode, RLP } from '@ethereumjs/rlp'
+import { RLP } from '@ethereumjs/rlp'
 import { keccak256 } from 'ethereum-cryptography/keccak.js'
 import { secp256k1 } from 'ethereum-cryptography/secp256k1.js'
 import { publicToAddress } from './account.ts'
@@ -14,6 +14,7 @@ import {
   setLengthLeft,
   unpadBytes,
 } from './bytes.ts'
+import { EthereumJSErrorWithoutCode } from './errors.ts'
 import { ecrecover } from './signature.ts'
 import type {
   EOACode7702AuthorizationListBytesItem,

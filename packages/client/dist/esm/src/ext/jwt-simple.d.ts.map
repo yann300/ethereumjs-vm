@@ -1,0 +1,1 @@
+{"version":3,"file":"jwt-simple.d.ts","sourceRoot":"","sources":["../../../../src/ext/jwt-simple.ts"],"names":[],"mappings":"AAAA;;;GAGG;AASH;;GAEG;AACH,MAAM,MAAM,UAAU,GAAG,OAAO,GAAG,OAAO,GAAG,OAAO,GAAG,OAAO,CAAA;AA0L9D,eAAO,MAAM,GAAG;sBAlCL,GAAG,OACP,MAAM,cACA,MAAM,YACR,GAAG;oBArEL,MAAM,OACR,MAAM,aACD,OAAO,cACN,MAAM;CAiGkB,CAAA"}

@@ -2,6 +2,11 @@ import { EthereumJSErrorWithoutCode } from './errors.ts'
 
 export * from './errors.ts'
 
+// In order to update all our errors to use `EthereumJSError`, temporarily include the
+// unset error code. All errors throwing this code should be updated to use the relevant
+// error code.
+export const DEFAULT_ERROR_CODE = 'ETHEREUMJS_DEFAULT_ERROR_CODE'
+
 export type Input = string | number | bigint | Uint8Array | Array<Input> | null | undefined
 
 export type NestedUint8Array = Array<Uint8Array | NestedUint8Array>
