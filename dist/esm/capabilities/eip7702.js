@@ -29,7 +29,7 @@ export function verifyAuthorizationList(tx) {
             }
         }
         const [chainId, address, nonce, yParity, r, s] = item;
-        validateNoLeadingZeroes({ r, s, nonce });
+        validateNoLeadingZeroes({ r, s });
         if (address.length !== 20) {
             throw EthereumJSErrorWithoutCode('Invalid EIP-7702 transaction: address length should be 20 bytes');
         }

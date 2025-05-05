@@ -49,7 +49,7 @@ export function verifyAuthorizationList(tx: EIP7702CompatibleTx) {
 
     const [chainId, address, nonce, yParity, r, s] = item
 
-    validateNoLeadingZeroes({ r, s, nonce })
+    validateNoLeadingZeroes({ r, s })
 
     if (address.length !== 20) {
       throw EthereumJSErrorWithoutCode(

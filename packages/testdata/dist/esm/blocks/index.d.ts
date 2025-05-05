@@ -1,6 +1,0 @@
-export * from './mainnetBlocks.ts';
-export * from './goerliBlocks.ts';
-export * from './preLondonTestDataBlocks1RLP.ts';
-export * from './preLondonTestDataBlocks2RLP.ts';
-export * from './verkleKaustinen6Block72.ts';
-//# sourceMappingURL=index.d.ts.map
