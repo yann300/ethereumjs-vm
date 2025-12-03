@@ -1,8 +1,14 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "../../tsconfig.prod.cjs.json",
   "compilerOptions": {
-    "module": "CommonJS",
-    "moduleResolution": "node",
-    "verbatimModuleSyntax": false
-  }
+    "rootDir": "src",
+    "outDir": "dist/cjs",
+    "lib": ["dom"]
+  },
+  "include": ["src/**/*.ts"],
+  "references": [
+    { "path": "../common/tsconfig.prod.cjs.json" },
+    { "path": "../rlp/tsconfig.prod.cjs.json" },
+    { "path": "../util/tsconfig.prod.cjs.json" }
+  ]
 }
